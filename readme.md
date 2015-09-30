@@ -23,12 +23,12 @@ Add this in your client side
 files = document.getElementById('fileUpload');
 file = files.files[0]
 
- AzureFile.upload(file,"uploadFile",{/*Pass some Parameters here */},function(err,success)
- {
-                                if (err)
-                                        throw err
-                                else
-                                    //file upload was succesfull
+ AzureFile.upload(file,"uploadFile", {/*Pass some Parameters here */}, function(err,success) {
+  if (err) {
+    throw err;
+  } else {
+    //file upload was succesfull
+  }
  }
  
  Add this in your server side
