@@ -1,9 +1,8 @@
 Azure-Blob-Upload
 =========
 
-This package allows you to upload your files to azure blob storage. Thanks to the eventminded file upload tutorial. I just extended their code .
-
-
+This package allows you to upload your files to azure blob storage. 
+_This is a fork from [jamesfebin:azure-blob-upload](https://atmospherejs.com/jamesfebin/azure-blob-upload)_
 
 
 Version
@@ -12,14 +11,12 @@ Version
 1.0
 
 
-
 Usage
 --------------
 
+**Client**
+
 ```sh
-
-Add this in your client side
-
 files = document.getElementById('fileUpload');
 file = files.files[0]
 
@@ -30,11 +27,10 @@ file = files.files[0]
     //file upload was succesfull
   }
  }
- 
- Add this in your server side
+ ```
+ **Server**
 
-Meteor Server 
-
+```
  Meteor.methods({
   'uploadFile': function(file) {
   
@@ -50,10 +46,6 @@ Meteor Server
 });
 
 ```
-
-
-> You can support this package here 
-> https://gratipay.com/heyfebin/
 
 
 
